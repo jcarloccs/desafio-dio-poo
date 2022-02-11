@@ -6,17 +6,13 @@ public class Mentoria extends Conteudo{
 
     private LocalDate data;
 
-    public Mentoria() {
-        super();
-    }
-
     public Mentoria(String titulo, String descricao, LocalDate data) {
         super(titulo, descricao);
         this.data = data;
     }
 
     @Override
-    public Double caldularXP() {
+    public Double calcularXP() {
         return XP_PADRAO + 20d;
     }
 
